@@ -11,6 +11,110 @@
     <title>Festivite</title>
 </head>
 <body>
-    
+    <div id="app">
+            <aside>
+                <div class="aside-container">
+                    <header>
+                        <img src="asset/logo.svg" alt="Logomarca Festivite">
+                        <h1>Festivite</h1>
+                        <p>Crie um convite digital para o seu evento</p>
+                    </header>
+                </div>
+            </aside>
+
+            <main>
+                <div class="main-container">
+                    <form method="post" enctype="multipart/form-data">
+                        <fieldset class="event-info">
+                            <div id="main-container">
+                                <h2>Crie seu convite</h2>
+                            </div>
+
+                            <div class="subtitle-event">
+                                <span></span>
+                                <h3>Sobre o evento</h3>
+                            </div>
+
+                            <div class="input-wrapper">
+                                <label for="event">
+                                    Título
+                                </label>
+                            <br>
+                                <input 
+                                id="event-name"
+                                name="event-name" 
+                                type="text" 
+                                placeholder="Nome do evento" required>
+                            </div>
+
+                            <div class="flex">
+                                <div class="input-wrapper flex-2">
+                                    <label for="event-star">
+                                        Inicio
+                                    </label>
+                                    <input 
+                                    type="datetime-local" 
+                                    id="event-star"
+                                    name="event-star" 
+                                    lang="pt-BR">
+                                </div>
+
+                                <div class="input-wrapper flex-1">
+                                    <label for="event-end">
+                                        Fim
+                                    </label>
+                                    <input 
+                                    type="datetime-local" 
+                                    id="event-end"
+                                    name="event-end" 
+                                    lang="pt-BR">
+                                </div>
+                            </div>
+
+                                    <label>
+                                        Tipo
+                                    </label>
+                            <div class="flex">
+                                    
+                                    <div class="radio-wrapper">
+                                    <div class="radio-inner">
+                                        <input 
+                                        type="radio"
+                                        name="event-type" 
+                                        id="presencial"
+                                        value="presencial" checked>
+                                        <img src="asset/Icons/building.svg" alt="">
+                                        <label for="presencial">Presencial</label>
+                                    </div>
+
+                                    <div class="radio-inner">
+                                        <input 
+                                        type="radio"
+                                        name="event-type" 
+                                        id="online"
+                                        value="online" checked>
+                                        <img src="asset/Icons/video.svg" alt="">
+                                        <label for="online">Online</label>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="input-wrapper flex-1">
+                                    <label for="event-end">
+                                        Fim
+                                    </label>
+                                    <input 
+                                    type="datetime-local" 
+                                    id="event-end"
+                                    name="event-end" 
+                                    lang="pt-BR">
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>   
+            </main>
+    </div>    
 </body>
 </html>

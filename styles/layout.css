@@ -1,0 +1,68 @@
+#app{
+    display: grid;
+    grid-template-columns: 31.25% 68.25%;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    gap: 1.25rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+main{
+    overflow: auto;
+    padding: 5rem 8.125rem;
+    background-color: var(--shape-body);
+    border-radius: .75rem;    
+
+    & h2{
+        font: var(--h2);
+        margin-bottom: 2.5rem;
+    }
+
+}
+
+main::-webkit-scrollbar{
+    width: .375rem;
+}
+
+main::-webkit-scrollbar-track{
+    margin-block: 1.5rem;
+}
+
+main::-webkit-scrollbar-thumb{
+    background-color: var(--input-placeholder);
+    border-radius: 50px;
+    margin-top: 5rem;
+    
+}
+
+
+
+aside{
+        justify-content: center;
+        & .aside-container{
+        background-image: url(../asset/Background.png);
+        height: 100vh;    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: .75rem;
+
+
+            & header{
+            padding: 2rem;
+                
+                & h1{
+                    font: var(--logo);
+                    color:var(--pink);
+                    margin-top: 1rem;
+                }
+
+                & p{
+                    font: var(--text-md);
+                    color: var(--text-heading);
+                }
+                
+            }
+        }
+}
