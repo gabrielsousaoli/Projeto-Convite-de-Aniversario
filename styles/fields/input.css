@@ -40,7 +40,7 @@ input[type="datetime-local"]{
     gap: 1.25rem;
 }
 
-/*
+
 .input-wrapper:has([disabled]) {
     opacity: .5;
 }
@@ -81,4 +81,4 @@ input{
         display: none;
     }
 
-} */
+}

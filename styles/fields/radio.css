@@ -1,55 +1,61 @@
+.title-tipo-fim{
+    font: var(--text-sm);
+    color: var(--text-body);
+}
+
 .radio-wrapper{
-    background-color: var(--input-base);
     display: flex;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    max-height: 50px;
+    max-width: 100%;
+    border-radius: .5rem;
+    margin-top: 12px;
     gap: .25rem;
+    justify-content: center;
+    
+
 }
 
 .radio-inner{
-    background-color: var(--input-base);
-    border: 1px solid var(--input-placeholder);
-    border-radius: .5rem;
-
     display: flex;
+    justify-content: center;
     align-items: center;
-    height: 2.5rem;
+    border-radius: .5rem;
+    margin: .25rem;
     width: 100%;
-
-    padding: 1.125rem 10.5px;
-
     gap: .5rem;
 
-    /* position: relative; */
-    & input,
-    & input:focus,
-    & input:hover {
+    & label{
         all: unset;
-        /* position: absolute; */
-        /* inset: 0; */
+        display: block;
+        justify-items: center;
+        font: var(--text-sm);
+    }
+    
+    & input,
+    & input:hover{
+        all: unset;
+        inset: 0;
+        align-items: center;
+        justify-content: center;
     }
 
-    .radio-image{
-
-        width: 1rem;
-        height: 1rem;
-
-        /* position: absolute; */
-        top: .5rem;
-        left: .5rem;
+    &:hover{
+        cursor: pointer;
     }
 
-    &:hover, &:focus-within{
-        border: 1px solid var(--stroke-highlight);
-
-        & .radio-image{
-            background-image: url(../../assets/Icons/radio-hover.svg);
-        }
+    & svg{
+        justify-content: center;
     }
 
     &:has(:checked){
-        border: 2px solid var(--stroke-highlight);
-
-        & .radio-image{
-            background-image: url(../../assets/Icons/radio-checking.svg);
+    background-color: var(--input-stroke);
+        & label{
+        font: 600 var(--text-sm);
         }
+        & svg path{
+            fill: var(--brand-light);
+        }    
     }
 }
