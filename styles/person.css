@@ -1,0 +1,16 @@
+.person-event{
+    margin-top: 2.75rem;
+}
+
+.person{
+
+    display: flex;
+    gap: .75rem;
+
+     span{
+        width: 1.5rem;
+        height: 1.5rem;
+        background: url(../asset/Icons/paintbrush.svg) center/contain;
+        background-size: cover;
+     }
+}

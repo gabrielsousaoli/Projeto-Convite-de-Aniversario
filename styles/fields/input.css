@@ -1,5 +1,4 @@
-input, 
-textarea{
+input, textarea{
     appearance: none;
     width: 100%;
     border-radius: .5rem;
@@ -36,6 +35,7 @@ input[type="datetime-local"]{
     }
 
 }
+
 .event-info .flex{
     gap: 1.25rem;
 }
@@ -54,18 +54,6 @@ input{
         color: var(--text-primary);
     }
 
-    &:invalid{
-        border: 0.125rem solid var(--semantic-error);
-    }
-
-    & + small{
-        font: var(--text-sm);
-        color: #78716C;
-
-        display: inline-block;
-        margin-top: .25rem;
-    }
-
     &[required] + .error{
         display: flex;
         align-items: center;
@@ -81,4 +69,9 @@ input{
         display: none;
     }
 
+}
+
+input[type="datetime-local"] {
+    color: var(--input-placeholder);
+    text-transform: uppercase;
 }

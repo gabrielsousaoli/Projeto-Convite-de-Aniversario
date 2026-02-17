@@ -39,7 +39,7 @@
                                 <label for="event">
                                     Título
                                 </label>
-                            <br>
+
                                 <input 
                                 id="event-name"
                                 name="event-name" 
@@ -52,11 +52,13 @@
                                     <label for="event-star">
                                         Inicio
                                     </label>
+
                                     <input 
-                                    type="datetime-local" 
+                                    type="datetime-local"
                                     id="event-star"
                                     name="event-star" 
-                                    lang="pt-BR">
+                                    lang="pt-BR"
+                                    required>
                                 </div>
 
                                 <div class="input-wrapper flex-1">
@@ -67,7 +69,8 @@
                                     type="datetime-local" 
                                     id="event-end"
                                     name="event-end" 
-                                    lang="pt-BR">
+                                    lang="pt-BR"
+                                    required>
                                 </div>
                             </div>
 
@@ -113,8 +116,8 @@
                                 <div class="input-wrapper flex-2">
                                     <input 
                                     type="text" 
-                                    id="event-end"
-                                    name="event-end" 
+                                    id="local-event"
+                                    name="local-event" 
                                     lang="pt-BR"
                                     placeholder="Link ou endereço">
                                 </div>
@@ -124,8 +127,92 @@
                             <label for="medical-info">Descrição</label>
                             <textarea name="medical-info" id="medical-info" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
                         </div>
+                        </fieldset>
+
+                        <fieldset class="person-event">
+                            <div class="person">
+                                <span></span>
+                                <h3>Personalização</h3>
+                            </div>
+
+                            <div class="main-color">
+                                <label>
+                                    Cor Principal
+                                </label>
+                                <div class="colors">
+
+                                    <input 
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="blue"
+                                    checked>
+
+                                    <input 
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="violet" >
+
+                                    <input 
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="puple" >
+
+                                    <input 
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="fuschia" >
+
+                                    <input
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="pink">
+
+                                    <input
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="red">
+
+                                    <input
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="orange">
+
+                                    <input
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="yellow">
+
+                                    <input 
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="lime">
+
+                                    <input
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="green">
+
+                                    <input
+                                    type="radio"
+                                    name="color" 
+                                    id="color"
+                                    value="cyan">
+
+                                </div>
+                            </div>
 
                         </fieldset>
+
                     </form>
                 </div>   
             </main>
