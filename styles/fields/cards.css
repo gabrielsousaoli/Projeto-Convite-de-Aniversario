@@ -1,0 +1,48 @@
+.themer-event{
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+.cards{
+    border: 1px solid var(--input-stroke);
+    width: auto;
+    background-color: var(--shape-button);
+    border-radius: .5rem;
+
+    & label{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;      
+        padding: .25rem;
+        cursor: pointer;
+        
+        & img{
+            height: 150px;
+            object-fit: cover;
+            border-radius: .25rem;
+        }
+
+        & div{
+            margin-block: .5rem;
+        }
+
+    }
+    
+
+}
+
+input[value="tema"]{
+    display: none;
+}
+
+input[value="tema"]:checked + label{
+    border: 2px solid var(--brand-light);
+    border-radius: .5rem;
+}
