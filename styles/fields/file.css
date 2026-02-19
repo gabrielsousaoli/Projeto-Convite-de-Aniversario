@@ -1,0 +1,13 @@
+/* .file {
+
+    & label{
+        all: unset;
+    }
+
+}
+
+input[type="file"] {
+    all: unset;
+    display: none;
+}
+ */

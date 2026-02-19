@@ -364,17 +364,61 @@
                             
                             </div>
 
-                            <div class="title-style">Estilo</div>
-                            <div id="switch" class="flex flex-1">
                                 
-                                <input type="checkbox" id="chk">
-                                <label for="chk" class="switch">
-                                    <span class="slider"></span>
+
+                            <div class="estilo-e-capa flex">
+                                   
+                                <div id="switch"
+                                    class="flex-1">
+
+                                    <div class="title-style">
+                                    Estilo
+                                    </div>
                                     
-                                </label>
-                                <span class="txt-escuro">Escuro</span>
-                                <span class="txt-claro">Claro</span>
+                                    <div class="switch-inner flex">
+                                        <div class="switch">
+                                            <input type="checkbox" id="chk">
+
+                                            <label for="chk" class="switch">
+                                                <span class="slider"></span>
+                                            </label>
+                                        </div>
+                                        <div class="text-switch">        
+                                                <span class="txt-escuro">
+                                                    Escuro
+                                                </span>
+                                                <span class="txt-claro">
+                                                    Claro
+                                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="file flex-3">
+                                    
+                                    <label>
+                                        Foto de capa
+                                    </label>
+
+                                    <div>
+                                        <input 
+                                        type="file"
+                                        id="file"
+                                        name="file"
+                                        accept="image/*">
+
+                                        <label for="file">
+                                        <img src="asset/Icons/upload.svg" alt="Icone de upload">
+                                            <span>
+                                                Selecionar
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+
                             </div>
+
+                            
 
                         </fieldset>
 

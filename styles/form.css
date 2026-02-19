@@ -20,3 +20,7 @@ fieldset{
         font: var(h3);
     }
 }
+
+.estilo-e-capa{
+    gap: 1rem;
+}
