@@ -1,7 +1,40 @@
-/* .file {
+.file {
 
-    & label{
-        all: unset;
+    margin-top: 1.75rem;
+
+
+    & .campo-upload{
+        align-items: center;
+        gap: .75rem;
+    }
+
+    & .title-capa{
+        padding-bottom: 1.5rem;
+    }
+
+    & .input-upload-inner{
+        display: flex;
+        background-color: var(--shape-button);
+        padding: .65625rem .75rem;
+        height: 40px;
+        border-radius: .5rem;
+        cursor: pointer;
+
+        & .custom-file{
+            display: flex;
+            gap: .5rem;
+            cursor: pointer;
+
+            & span{
+                font: 600 var(--text-sm);
+            }
+        }
+
+        &:has(img) img{
+            width: 1rem;
+            height: 1rem;
+        }
+    
     }
 
 }
@@ -10,4 +43,5 @@ input[type="file"] {
     all: unset;
     display: none;
 }
- */
+
+
