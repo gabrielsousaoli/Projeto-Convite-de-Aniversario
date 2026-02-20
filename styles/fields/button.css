@@ -1,0 +1,25 @@
+.area-button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+
+    button {   
+    background-color: var(--brand-light);
+    color: var(--white);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 16px;
+
+    & .button-inner {
+        gap: .75rem;
+        align-items: center;
+        margin: .8125rem 1.25rem;
+
+        & span{
+        font: 600 var(--text-md);
+        }
+    }
+
+}
+}

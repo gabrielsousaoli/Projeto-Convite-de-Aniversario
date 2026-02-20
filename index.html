@@ -364,8 +364,6 @@
                             
                             </div>
 
-                                
-
                             <div class="estilo-e-capa flex">
                                    
                                 <div id="switch"
@@ -431,9 +429,111 @@
 
                             </div>
 
-                            
+                        </fieldset>
+
+
+                        <fieldset class="contact">
+
+                            <div class="title-contact flex">
+                                <span></span>
+                                <h3>Dados para contato</h3>
+                            </div>
+
+                            <div class="camps-contact">
+                                <div class="input-wrapper">
+                                    <label for="contact-name">
+                                        Nome
+                                    </label>
+
+                                    <input 
+                                    id="contact-name"
+                                    name="contact-name" 
+                                    type="text" 
+                                    placeholder="Nome completo" required>
+                                    </div>
+
+                                    <div class="input-wrapper email-tell flex">
+                                        <div class="input-email flex-1">
+                                            <label for="contact-email">
+                                                E-mail
+                                            </label>
+
+                                            <input 
+                                            id="contact-email"
+                                            name="contact-email" 
+                                            type="email" 
+                                            placeholder="exemplo@email.com" required>
+                                        </div>
+
+                                        <div class="input-tel flex-3">
+                                            <label for="contact-tel">
+                                                Telefone
+                                            </label>
+
+                                            <input 
+                                            id="contact-tel"
+                                            name="contact-tel" 
+                                            type="tel"
+                                            maxlength="11" 
+                                            placeholder="(99) 99999-9999"
+                                            pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+                                            required>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="line"></div>
+
+                                    <div class="terms">
+
+                                        <div class="term-and-condicion flex">
+                                            <input 
+                                            type="checkbox" 
+                                            id="terms" 
+                                            name="terms" 
+                                            required>
+
+                                            <label for="terms">
+                                                Li e concordo com os <span> Termos e Condições</span> e com a <span>Política de Privacidade</span>
+                                            </label>
+                                        </div>
+
+                                        <div class="promotion-email flex">
+                                            <input 
+                                            type="checkbox" 
+                                            id="promotion" 
+                                            name="promotion">
+
+                                            <label for="promotion">
+                                                Aceito receber atualizações e promoções por e-mail
+                                            </label>
+                                        </div>
+                                        
+                                        <div class="promotion-sms flex">
+                                            <input 
+                                            type="checkbox" 
+                                            id="promotion-sms" 
+                                            name="promotion-sms">
+
+                                            <label for="promotion">
+                                                Aceito receber atualizações e promoções por SMS
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                </div>
 
                         </fieldset>
+
+                        <div class="area-button">
+                            <button class="button" type="submit">
+                                <div class="button-inner flex">
+                                <img src="asset/Icons/ticket.svg" alt="icone de um ticket">    
+                                <span>Gerar convite</span>
+                                </div>
+                            </button>
+                        </div>
 
                     </form>
                 </div>   

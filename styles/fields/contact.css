@@ -1,0 +1,26 @@
+.contact{
+
+    margin-top: 3rem;
+
+    & .title-contact{
+
+        gap: .75rem;
+        align-items: center;
+        
+        & span{
+            width: 1.5rem;
+            height: 1.5rem;
+            background-image: url(../../asset/Icons/calendar.svg);
+            background-size: cover;
+        }
+    }
+
+    .camps-contact{
+        margin-top: 1.5rem;
+    }
+
+    .email-tell{
+        gap: 1rem;
+    }
+
+}
