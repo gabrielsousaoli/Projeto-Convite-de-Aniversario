@@ -33,6 +33,7 @@
         &:has(img) img{
             width: 1rem;
             height: 1rem;
+            filter: brightness(0) saturate(100%) invert(58%) sepia(75%) saturate(1586%) hue-rotate(185deg) brightness(105%) contrast(101%);
         }
     
     }
@@ -41,7 +42,8 @@
 
 input[type="file"] {
     all: unset;
-    display: none;
+    display: none; 
+
 }
 
 
