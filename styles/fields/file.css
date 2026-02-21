@@ -1,6 +1,7 @@
 .file {
 
     margin-top: 1.75rem;
+    align-items: center;
 
 
     & .campo-upload{
@@ -15,6 +16,8 @@
     & .input-upload-inner{
         display: flex;
         background-color: var(--shape-button);
+        align-items: center;
+        justify-content: center;
         padding: .65625rem .75rem;
         height: 40px;
         border-radius: .5rem;
@@ -41,6 +44,32 @@
         }
     
     }
+
+    & .error{
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        margin-top: .5rem;
+
+        font: var(--text-sm);
+        color: var(--danger);
+
+        & img{
+            width: 1rem;
+            height: 1rem;
+            filter: brightness(0) saturate(100%) invert(41%) sepia(93%) saturate(1106%) hue-rotate(327deg) brightness(101%) contrast(100%);
+        }
+
+
+    }
+
+    &:not(.focus):valid + .error {
+        display: none;
+    }
+
+    & .file-name{
+            height: 3rem;
+        }
 
 }
 

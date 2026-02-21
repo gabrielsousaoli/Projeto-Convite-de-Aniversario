@@ -5,20 +5,27 @@ input, textarea{
     background-color: var(--input-base);
     border: 1px solid var(--input-stroke);
 
-    margin-block: .75rem;
     padding: .8125rem 1rem;
+
 
     font: var(--text-md);
     caret-color: var(--text-body);
     color: var(--text-body);
+
 }
 
-label{
+.input-wrapper, .textarea-wrapper{
+    margin-block: .75rem;
+
+    & label{
     font: var(--text-sm);
     color: var(--text-body);
-    margin-bottom: .75rem;
-}
+    padding-bottom: .75rem;
+    display: block;
 
+
+  }
+}
 
 input:focus,
 textarea:focus,
@@ -38,6 +45,7 @@ input[type="datetime-local"]{
 
 .event-info .flex{
     gap: 1.25rem;
+
 }
 
 
@@ -45,7 +53,7 @@ input[type="datetime-local"]{
     opacity: .5;
 }
 
-input{
+input, textarea{
     &[disabled]{
         background-color: var(--surface-disabled);
 
@@ -58,14 +66,21 @@ input{
         display: flex;
         align-items: center;
         gap: .25rem;
+        margin-top: .5rem;
 
         font: var(--text-sm);
-        color: var(--semantic-error);
+        color: var(--danger);
 
-        margin-top: .25rem;
+        & img{
+            width: 1rem;
+            height: 1rem;
+            filter: brightness(0) saturate(100%) invert(41%) sepia(93%) saturate(1106%) hue-rotate(327deg) brightness(101%) contrast(100%);
+        }
+
+
     }
 
-    &:not(.focus):valid + error {
+    &:not(.focus):valid + .error {
         display: none;
     }
 

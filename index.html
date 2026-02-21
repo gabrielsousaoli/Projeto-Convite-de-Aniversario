@@ -36,7 +36,7 @@
                             </div>
 
                             <div class="input-wrapper">
-                                <label for="event">
+                                <label>
                                     Título
                                 </label>
 
@@ -44,12 +44,22 @@
                                 id="event-name"
                                 name="event-name" 
                                 type="text" 
-                                placeholder="Nome do evento" required>
+                                placeholder="Nome do evento" 
+                                required
+                                class="form-input-event-name"
+                                >
+
+                                <div class="error">
+                                    <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                                    <span>O título do evento é obrigatório</span>
+                                </div>
+
                             </div>
 
                             <div class="flex">
                                 <div class="input-wrapper flex-2">
-                                    <label for="event-star">
+
+                                    <label>
                                         Inicio
                                     </label>
 
@@ -59,18 +69,30 @@
                                     name="event-star" 
                                     lang="pt-BR"
                                     required>
+
+                                    <div class="error">
+                                    <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                                    <span>A data de inicio é obrigatório</span>
+                                    </div>
                                 </div>
 
                                 <div class="input-wrapper flex-1">
-                                    <label for="event-end">
+                                    <label>
                                         Fim
                                     </label>
+                                    
                                     <input 
                                     type="datetime-local" 
                                     id="event-end"
                                     name="event-end" 
                                     lang="pt-BR"
                                     required>
+
+                                    <div class="error">
+                                    <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                                    <span>A data do fim é obrigatório</span>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -124,8 +146,13 @@
                             </div>
 
                             <div class="textarea-wrapper">
-                            <label for="medical-info">Descrição</label>
-                            <textarea name="medical-info" id="medical-info" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                            <label for="description">Descrição</label>
+                            <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento" required></textarea>
+                            
+                            <div class="error">
+                            <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                            <span>A descrição é obrigatória</span>
+                            </div>
                         </div>
                         </fieldset>
 
@@ -375,11 +402,12 @@
                                     
                                     <div class="switch-inner flex">
                                         <div class="switch">
-                                            <input type="checkbox" id="chk">
+                                            <input type="checkbox" id="chk" required>
 
                                             <label for="chk" class="switch">
                                                 <span class="slider"></span>
                                             </label>
+                                            
                                         </div>
                                         <div class="text-switch">        
                                                 <span class="txt-escuro">
@@ -415,12 +443,19 @@
                                                 type="file"
                                                 id="file"
                                                 name="file"
-                                                accept="image/*">
+                                                accept="image/*"
+                                                required>
+
                                                 
                                             </div>
+                                                <div class="error">
+                                                <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                                                <span>A foto de capa é obrigatória</span>
+                                            </div>
+                                            
                                         </div>
 
-                                        <div>
+                                        <div class="file-name">
                                             Nenhum arquivo selecionado
                                         </div>
                                     </div>    
@@ -450,6 +485,12 @@
                                     name="contact-name" 
                                     type="text" 
                                     placeholder="Nome completo" required>
+
+                                    <div class="error">
+                                                <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                                                <span>O nome é obrigatório</span>
+                                            </div>
+
                                     </div>
 
                                     <div class="input-wrapper email-tell flex">
@@ -463,6 +504,12 @@
                                             name="contact-email" 
                                             type="email" 
                                             placeholder="exemplo@email.com" required>
+
+                                            <div class="error">
+                                                <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                                                <span>O e-mail é obrigatório</span>
+                                            </div>
+
                                         </div>
 
                                         <div class="input-tel flex-3">
@@ -478,13 +525,19 @@
                                             placeholder="(99) 99999-9999"
                                             pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
                                             required>
+
+                                            <div class="error">
+                                                <img src="asset/Icons/circle-alert.svg" alt="Icone de alerta">
+                                                <span>A foto de capa é obrigatória</span>
+                                            </div>
+
                                         </div>
 
                                     </div>
 
                                     <div class="line"></div>
 
-                                    <div class="terms">
+                                    <div class="terms flex">
 
                                         <div class="term-and-condicion flex">
                                             <input 
